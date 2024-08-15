@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); 
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-image:url("https://static.vecteezy.com/system/resources/previews/001/966/611/original/abstract-futuristic-technology-background-with-digital-number-timer-concept-and-countdown-transparent-vector.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #151515;
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ffcc;
+    animation: fadeIn 0.7s ease-in-out;
+    margin-right:30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #00ffcc;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.stopwatch {
+    margin-bottom: 25px;
+}
+
+#time-display {
+    font-size: 4rem;
+    color: #00ffcc;
+    padding: 20px 30px;
+    border: 3px solid #00ffcc;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    text-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+    letter-spacing: 0.1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.controls {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #333333;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 3px #ffffff;
+}
+
+button:hover {
+    background-color: #00ffcc;
+    color: #151515;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+button:focus {
+    outline: none;
+}
+
+#start-btn {
+    background-color: #28a745;
+    box-shadow: 0 0 10px #28a745;
+}
+
+#pause-btn {
+    background-color: #ffc107;
+    box-shadow: 0 0 10px #ffc107;
+}
+
+#reset-btn {
+    background-color: #dc3545;
+    box-shadow: 0 0 10px #dc3545;
+}
+
+#lap-btn {
+    background-color: #007bff;
+    box-shadow: 0 0 10px #007bff;
+}
+
+.lap-times {
+    margin-top: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    border-top: 2px solid #00ffcc;
+    padding-top: 10px;
+}
+
+.lap-times p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #d9d9d9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #262626;
+}
+
+.lap-times p:nth-child(odd) {
+    background-color: #333333;
+}
