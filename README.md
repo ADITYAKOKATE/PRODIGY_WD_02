@@ -9,4 +9,7 @@ With precise timing down to milliseconds, the web-based stopwatch is ideal for v
 
 This Stopwatch Web Application is perfect for anyone looking for a reliable, fast, and accessible time-tracking solution.
 
+## Screenshots
+<img src="Screenshot 2025-03-05 125905.png" width="500"><img src="Screenshot 2025-03-05 125931.png" width="500">
+
 
